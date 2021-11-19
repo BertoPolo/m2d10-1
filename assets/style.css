@@ -3,6 +3,9 @@
   justify-content: flex-end;
 } */
 
+body {
+  background-color: rgb(200, 199, 199);
+}
 #carouselExampleCaptions > div > div.carousel-item.active > div > h5 {
   color: black;
   font-size: 40px;
@@ -45,6 +48,6 @@ body
   font-weight: 700;
 }
 
-#carouselExampleCaptions > button.btn.btn-success.text-white {
+/* #carouselExampleCaptions > button.btn.btn-success.text-white {
   position: absolute;
-}
+} */
