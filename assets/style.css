@@ -1,2 +1,16 @@
-svg {
+#carouselExampleCaptions > div > div.carousel-item.active > div > h5 {
+  color: black;
+  font-size: 40px;
+  display: flex;
+}
+
+#midBanner {
+  display: flex;
+  justify-content: center;
+  height: 125px;
+  width: 40%;
+}
+
+hr {
+  border: 1px solid gray;
 }
