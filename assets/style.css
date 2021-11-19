@@ -1,3 +1,8 @@
+/* #navBarIcons {
+  display: flex;
+  justify-content: flex-end;
+} */
+
 #carouselExampleCaptions > div > div.carousel-item.active > div > h5 {
   color: black;
   font-size: 40px;
@@ -13,4 +18,29 @@
 
 hr {
   border: 1px solid gray;
+}
+
+body
+  > section:nth-child(5)
+  > div
+  > div
+  > div:nth-child(3)
+  > div
+  > p.bg-info.d-inline,
+body
+  > section:nth-child(5)
+  > div
+  > div
+  > div:nth-child(4)
+  > div
+  > p.bg-info.d-inline,
+body
+  > section:nth-child(5)
+  > div
+  > div
+  > div:nth-child(2)
+  > div
+  > p.bg-info.d-inline {
+  font-size: 1.5rem;
+  font-weight: 700;
 }

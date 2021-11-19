@@ -16,20 +16,47 @@
 <body>
 
     <!-- TO DO - 
-        navbar: space zimbaleah and icon; right icons ;revert shopping cart ;spacing all
+        navbar:
+        carousel:
          -->
-    
+         <!-- problems : flexbox dont fully works, 
+          padding/margin dont works, 
+         -->
+    <section>
+
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img width=" 40px"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAABxCAMAAADYvsylAAAAYFBMVEX///8zMzMkJCQ5OTmfn5+amppISEiTk5MgICAwMDAaGhoqKioWFhYYGBjCwsK4uLjS0tIAAABvb296enpSUlILCwvc3Nyrq6vq6uqCgoIRERGLi4tBQUFgYGD5+fllZWXgW5RQAAAELklEQVRoge2b6ZKzKhCGgUwSEdzivsX7v8tPBSMIKJPMOOdU8f5LddsPEIRmEYBJYX2D5yirQ7Aohj46T0FXMGxJcXNrv85R21FMo7m2DSZr3X9fEcJ0qjHEpDgRC0CBSDd2Kb85s7aTSkpjUKPbyVjwvKA7uKH2bO5Y1x5A9HU69z62seM6ruM6ruN+i1u13UVRH60O8UO1d2m8OkS9xqGt9rmhj7AqQh+vRwKic/CXIM/B1zkgL97jVgnWp4E+nyyjxpAnLslD6untuHnucFtkCIsxayhoKBfELHsoTAEguu5wb6awMJjrU1GTHbL6RL7JjvsdLq8OJqt4Sfy5axU8rM5hbpDSUx2kBtnjYjg8XroRlUu61f7oiMol2WofMLblSnltTbZcnAl9BFTszxG5csoWIzsuSYH6mMj1I8nhirbcTUL+IG9xlfpuuF/elot/hHtUX8d1XMd1XHHG0nI3K+aUKOOzvINgyYWoLrgqLReSr2LVVZ2PcBcu1uc3uBA1TEmv50IvbxblPMOQ5kFMlwiVFfci5xvkYeBqFDDuxsGSO5B9LjCldaPDbA/f40b5ATc15W28rz07ucUsuWCQyqtyn1hukRe24ylIGEhgWy5oc28VHbZcUPWNp6oZXplPfKGCwZoLnmG0KlS4I1l04G7SKqQQLKXde6TTlvt9/c+45G+4kfcpd06wd7mxqoiNnZbcShMhPc7biXoc4LH30ZJbJmoE9sbbzAsaBXab46Vh+Tstbt7iSuv1d7hiNmHPJZnK+B43EQpuzSXIrrpGLm7E5Enh+jTQiHqZJXbsV7oAAYV30UvhhnrZUsex2RBAGsD/S/tmjuu4v8EtBrpVUnJb2TWK0avXVyTsVftLebfHLRM1X1ymoiHQjWaILG/3PdfnmnzE2psXikTzBOfeDWsFwlPYWPesJbfWlZhxn8adVnZsDnrjXHbM1e7H8qWRsTqknp81L2GOuXxdhpGYlCfsGgBfwpDVgJg3n1kT0c7LzwLhQy5b3ZBeuoJwLQQuSQUDK6bERcNs4oGy6/Qjw1Zcebt1EeMiaT4rvC0XD8zCULzHzb3mmMv/Ly03l3cuMN5wl2CZGCj9cS50XMd1XMc95Mop/I+OV7iTs3uRK5cpVsbnT7hjBpHWgthh9jIf9avhQZT56E3uMv8SJJxnyvOvetL5A9zsnXyDb01+wtWed/P8yrgm50fsn3CrXBOc55NlrprmZuZpwifcsYeq9xl4vghaqrup4N9470+mX97CnVzRiztdedjlgqq9bS9fkGULSXd1IyuXpMiffmIebL7DAfn5Rw3nSyC73FPkuI7ruI7ruMfc7I/ue//V/fbQbz44GnpLZUDjP/h+IfbI1MQxxeTMGi/fa4CI4qZrr+eo7Sih/Cwqvpz5PQ7t1r81rDM1dfoVZS1bYf0DmCGDQFSkYpkAAAAASUVORK5CYII=" alt="gog logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-            <li class="nav-item dropdown">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#"><img width=" 40px"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAABxCAMAAADYvsylAAAAYFBMVEX///8zMzMkJCQ5OTmfn5+amppISEiTk5MgICAwMDAaGhoqKioWFhYYGBjCwsK4uLjS0tIAAABvb296enpSUlILCwvc3Nyrq6vq6uqCgoIRERGLi4tBQUFgYGD5+fllZWXgW5RQAAAELklEQVRoge2b6ZKzKhCGgUwSEdzivsX7v8tPBSMIKJPMOOdU8f5LddsPEIRmEYBJYX2D5yirQ7Aohj46T0FXMGxJcXNrv85R21FMo7m2DSZr3X9fEcJ0qjHEpDgRC0CBSDd2Kb85s7aTSkpjUKPbyVjwvKA7uKH2bO5Y1x5A9HU69z62seM6ruM6ruN+i1u13UVRH60O8UO1d2m8OkS9xqGt9rmhj7AqQh+vRwKic/CXIM/B1zkgL97jVgnWp4E+nyyjxpAnLslD6untuHnucFtkCIsxayhoKBfELHsoTAEguu5wb6awMJjrU1GTHbL6RL7JjvsdLq8OJqt4Sfy5axU8rM5hbpDSUx2kBtnjYjg8XroRlUu61f7oiMol2WofMLblSnltTbZcnAl9BFTszxG5csoWIzsuSYH6mMj1I8nhirbcTUL+IG9xlfpuuF/elot/hHtUX8d1XMd1XHHG0nI3K+aUKOOzvINgyYWoLrgqLReSr2LVVZ2PcBcu1uc3uBA1TEmv50IvbxblPMOQ5kFMlwiVFfci5xvkYeBqFDDuxsGSO5B9LjCldaPDbA/f40b5ATc15W28rz07ucUsuWCQyqtyn1hukRe24ylIGEhgWy5oc28VHbZcUPWNp6oZXplPfKGCwZoLnmG0KlS4I1l04G7SKqQQLKXde6TTlvt9/c+45G+4kfcpd06wd7mxqoiNnZbcShMhPc7biXoc4LH30ZJbJmoE9sbbzAsaBXab46Vh+Tstbt7iSuv1d7hiNmHPJZnK+B43EQpuzSXIrrpGLm7E5Enh+jTQiHqZJXbsV7oAAYV30UvhhnrZUsex2RBAGsD/S/tmjuu4v8EtBrpVUnJb2TWK0avXVyTsVftLebfHLRM1X1ymoiHQjWaILG/3PdfnmnzE2psXikTzBOfeDWsFwlPYWPesJbfWlZhxn8adVnZsDnrjXHbM1e7H8qWRsTqknp81L2GOuXxdhpGYlCfsGgBfwpDVgJg3n1kT0c7LzwLhQy5b3ZBeuoJwLQQuSQUDK6bERcNs4oGy6/Qjw1Zcebt1EeMiaT4rvC0XD8zCULzHzb3mmMv/Ly03l3cuMN5wl2CZGCj9cS50XMd1XMc95Mop/I+OV7iTs3uRK5cpVsbnT7hjBpHWgthh9jIf9avhQZT56E3uMv8SJJxnyvOvetL5A9zsnXyDb01+wtWed/P8yrgm50fsn3CrXBOc55NlrprmZuZpwifcsYeq9xl4vghaqrup4N9470+mX97CnVzRiztdedjlgqq9bS9fkGULSXd1IyuXpMiffmIebL7DAfn5Rw3nSyC73FPkuI7ruI7ruMfc7I/ue//V/fbQbz44GnpLZUDjP/h+IfbI1MQxxeTMGi/fa4CI4qZrr+eo7Sih/Cwqvpz5PQ7t1r81rDM1dfoVZS1bYf0DmCGDQFSkYpkAAAAASUVORK5CYII=" alt="gog logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    STORE
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    ABOUT
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                  STORE
+                  COMMUNITY
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -37,78 +64,60 @@
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
+              </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                  ABOUT
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  SUPPORT
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
+              </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                COMMUNITY
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  ZIBALEAH
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown ">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
 
-            <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle " href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                SUPPORT
-              </a>
-              <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
+            </ul>
+            <div id="navBarIcons" class="text-white-50 ">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+              </svg>0
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                ZIBALEAH
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+              </svg>0
 
-          </ul>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+              </svg>0
 
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
-            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
-          </svg>
+              <svg width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
 
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
-            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-          </svg>
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-          </svg>
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg>
-          
-      </nav>
+            </div>  
+        </nav>
+        
+</section>
 
       <!-- TITLE -->
       <h5> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
         <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
       </svg>Highlights</h5>
+      <hr>
       
     <!-- CAROUSEL -->
       <section>
@@ -119,7 +128,7 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
           </ol>
 
-          <div class="carousel-inner">
+          <div class="carousel-inner d-flex justify-content-start">
             <div class="carousel-item active">
               <img src="./assets/gog-assets/carousel6.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
@@ -155,38 +164,75 @@
           </button>
 
         </div>
-
+      <br><br>
       </section>
 
       <!-- CARDS -->
       <section>
-        <div class="container">
-          <div class="row row-cols-4"> 
+        <!-- card 1 -->
+        <div class="container ">
+          <div class="row row-cols-4 d-flex justify-content-around"> 
             <div class=" col card" style="width: 18rem;">
               <img src="./assets/gog-assets/tile (1).jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to.</p>
+                <svg class="text-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-windows" viewBox="0 0 16 16">
+                  <path d="M6.555 1.375 0 2.237v5.45h6.555V1.375zM0 13.795l6.555.933V8.313H0v5.482zm7.278-5.4.026 6.378L16 16V8.395H7.278zM16 0 7.33 1.244v6.414H16V0z"/>
+                </svg>
+                <h6 class="text-muted">$ 19.99</h6>
               </div>
             </div>
 
+            <!-- card 2 -->
             <div class="col card" style="width: 18rem;">
               <img src="./assets/gog-assets/tile (2).jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to.</p>
+                <svg class="text-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-windows" viewBox="0 0 16 16">
+                  <path d="M6.555 1.375 0 2.237v5.45h6.555V1.375zM0 13.795l6.555.933V8.313H0v5.482zm7.278-5.4.026 6.378L16 16V8.395H7.278zM16 0 7.33 1.244v6.414H16V0z"/>
+                </svg>
+                <svg class="text-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+                  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+                </svg>
+                <svg  class="text-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+                <p class="bg-info d-inline">-40%</p>
+                <h6 class="text-muted">$ 19.99</h6>
               </div>
             </div>
 
+            <!-- card 3 -->
             <div class="col card" style="width: 18rem;">
               <img src="./assets/gog-assets/tile (20).jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to.</p>
+                <svg class="text-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-windows" viewBox="0 0 16 16">
+                  <path d="M6.555 1.375 0 2.237v5.45h6.555V1.375zM0 13.795l6.555.933V8.313H0v5.482zm7.278-5.4.026 6.378L16 16V8.395H7.278zM16 0 7.33 1.244v6.414H16V0z"/>
+                </svg>
+                <p class="bg-info d-inline">-40%</p>
+                <h6 class="text-muted">$ 19.99</h6>
               </div>
             </div>
-
+            
+            <!-- card 4 -->
             <div class="col card" style="width: 18rem;">
               <img src="./assets/gog-assets/tile (21).jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to.</p>
+                <svg class="text-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-windows" viewBox="0 0 16 16">
+                  <path d="M6.555 1.375 0 2.237v5.45h6.555V1.375zM0 13.795l6.555.933V8.313H0v5.482zm7.278-5.4.026 6.378L16 16V8.395H7.278zM16 0 7.33 1.244v6.414H16V0z"/>
+                </svg>
+                <svg class="text-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+                  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+                </svg>
+                <svg  class="text-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+                <p class="bg-info d-inline">-40%</p>
+                <h6 class="text-muted">$ 19.99</h6>
               </div>
             </div>
           </div>
@@ -206,7 +252,7 @@
       <!-- BANNER -->
       <section>
 
-        <img id="midBanner"src="./assets/gog-assets/carousel2.jpg" height="125px" width="40%" alt="">
+        <img class="mx-auto"id="midBanner"src="./assets/gog-assets/carousel2.jpg" height="125px" width="40%" alt="">
 
       </section>
       
@@ -232,7 +278,7 @@
               <a class="dropdown-item" href="#">Separated link</a>
             </div>
           </li>
-          
+
         </ul>
 
       </section>
