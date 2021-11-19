@@ -44,3 +44,7 @@ body
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+#carouselExampleCaptions > button.btn.btn-success.text-white {
+  position: absolute;
+}
