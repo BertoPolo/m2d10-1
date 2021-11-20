@@ -80,6 +80,10 @@
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg>
                   ZIBALEAH
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown ">
@@ -183,7 +187,7 @@
                 <svg class="text-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-windows" viewBox="0 0 16 16">
                   <path d="M6.555 1.375 0 2.237v5.45h6.555V1.375zM0 13.795l6.555.933V8.313H0v5.482zm7.278-5.4.026 6.378L16 16V8.395H7.278zM16 0 7.33 1.244v6.414H16V0z"/>
                 </svg>
-                <h6 class="text-muted">$ 19.99</h6>
+                <h6 class="text-muted d-flex justify-content-end">$ 19.99</h6>
               </div>
             </div>
 
@@ -202,8 +206,10 @@
                 <svg  class="text-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                   <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                 </svg>
-                <p class="bg-info d-inline">-40%</p>
-                <h6 class="text-muted">$ 19.99</h6>
+                <div class="d-flex justify-content-end">
+                  <p class="bg-info d-inline">-40%</p>
+                  <h6 class="text-muted d-flex align-items-end">$ 19.99</h6>
+                </div>
               </div>
             </div>
 
@@ -248,14 +254,29 @@
 
       <section>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum provident aperiam ab similique autem quas.</p>
+        <section>
+
+          <!-- p column -->
+          <div class="container">
+            <div class="row">
+              <div class="col-10">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum provident aperiam ab similique autem quas.</p>
+              </div>
+
+              <div class="col-2">
+                <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                </svg>
+                The new GOG Galaxy</p>
+              </div>
+            </div>
+          </div>
       
       </section>
       <hr>
 
       <!-- BANNER -->
-      <section>
-
+     
         <img class="mx-auto"id="midBanner"src="./assets/gog-assets/carousel2.jpg" height="125px" width="40%" alt="">
 
       </section>
