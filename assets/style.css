@@ -30,7 +30,7 @@ body
   > div:nth-child(3)
   > div
   > div
-  > p.bg-info.d-inline,
+  > p.bg-info.d-inline-flex,
 body
   > section:nth-child(5)
   > div
@@ -40,7 +40,7 @@ body
   > div
   > p.bg-info.d-inline,
 body > section:nth-child(5) > div > div > div:nth-child(2) > div > div > p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
