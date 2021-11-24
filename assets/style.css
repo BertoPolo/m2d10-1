@@ -19,10 +19,18 @@ body {
   width: 40%;
 }
 
+#addToCartButton {
+  position: absolute;
+  z-index: 100;
+  right: 8rem;
+  bottom: 4rem;
+}
+
 hr {
   border: 1px solid gray;
 }
 
+/* Cards compatibility and price */
 body
   > section:nth-child(5)
   > div
@@ -43,6 +51,7 @@ body > section:nth-child(5) > div > div > div:nth-child(2) > div > div > p {
   font-size: 1.2rem;
   font-weight: 700;
 }
+/* ---------- */
 
 .col-2 {
   color: purple;
