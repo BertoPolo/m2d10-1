@@ -1,12 +1,8 @@
-/* #navBarIcons {
-  display: flex;
-  justify-content: flex-end;
-} */
-
 body {
   background-color: rgb(200, 199, 199);
 }
-#carouselExampleCaptions > div > div.carousel-item.active > div > h5 {
+
+#carouselExampleCaptions > div > div.carousel-item.active > div > div > h5 {
   color: black;
   font-size: 40px;
   display: flex;
@@ -19,12 +15,12 @@ body {
   width: 40%;
 }
 
-#addToCartButton {
+/* #addToCartButton {
   position: absolute;
   z-index: 100;
   right: 8rem;
   bottom: 4rem;
-}
+} */
 
 hr {
   border: 1px solid gray;
